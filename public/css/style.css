@@ -1,0 +1,146 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+
+header .brand {
+    /* background-color: blue; */
+    width: 50%;
+}
+
+header .brand h1 {
+    /* background-color: indigo; */
+    margin: 0px;
+}
+
+header .brand img {
+    width: 100px;
+}
+
+header nav {
+    /* background-color: green; */
+    width: 25%;
+}
+
+header nav ul {
+    /* background-color: red; */
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+
+header nav ul li {
+    /* background-color: green; */
+    margin-left: 10px;
+}
+
+header nav ul li a {
+    /* background-color: blue; */
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #707070;
+
+}
+
+header .register {
+    /* background-color: skyblue; */
+    width: 25%;
+    text-align: center;
+}
+
+
+header .register a {
+    text-decoration: none;
+    background-color: rgb(53, 38, 146);
+    padding: 8px;
+    color: white;
+    border-radius: 4px;
+}
+
+main .banner {
+    background-image: url('../images/slider-bg-2.jpg');
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .banner .wrapper {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.443);
+    color: white;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+
+.wrapper a {
+    background-color: #050543;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.wrapper h3 {
+    font-size: 2.8em;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.wrapper p {
+    color: #d8d8d8;
+    font-size: 14px;
+}
+
+.card-row-parent {
+    display: flex;
+    justify-content: center;
+    padding: 200px 5px;
+}
+
+.card-row {
+    box-shadow: 1px 1px 10px silver;
+    width: 500px;
+    padding: 25px;
+}
+
+.form-group {
+    /* background-color: red; */
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    display: block;
+    width: 95%;
+    border: none;
+    padding: 15px;
+    background-color: #ebebeb;
+    resize: none;
+}
+
+.form-button {
+    display: flex;
+    justify-content: right;
+}
+
+.form-button input {
+    width: auto;
+    background-color: #050543;
+    color: white;
+    cursor: pointer;
+}
