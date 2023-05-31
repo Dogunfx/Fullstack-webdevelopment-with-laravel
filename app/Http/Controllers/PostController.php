@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 class PostController extends Controller
 {
     //
-    public function HandlerSendRoute()
+    public function SendContactPostHandler()
     {
         $address =  Request::input("address");
         $phone =  Request::input("phone");
