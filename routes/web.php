@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Request;
 
@@ -69,3 +70,8 @@ $showListHandler = function () use ($MY_DB) {
 Route::post($sendRoute, $handlerSendRoute);
 Route::post($register, $registerPostHandler);
 Route::get($showList, $showListHandler);
+
+Route::get('/auth-route', [TestController::class, "index"])->middleware('auth');
+Route::get('/login', [TestController::class, "login"])->name('login');
+Route::post('/admin-login', [TestController::class, "verify"]);
+Route::get('/logout', [TestController::class, "logout"]);
