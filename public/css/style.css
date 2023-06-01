@@ -144,3 +144,12 @@ main .banner .wrapper {
     color: white;
     cursor: pointer;
 }
+
+
+.message {
+    color: #034b03;
+    text-align: center;
+    font-size: 20px;
+    background-color: #a4f7a4;
+    border-radius: 5px;
+}

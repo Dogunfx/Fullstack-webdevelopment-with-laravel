@@ -4,6 +4,12 @@
 <div class="card-row-parent">
     <div class="card-row">
         <h1>Register for an Exam</h1>
+
+        <p class="message">
+            {{ session("message") }}
+        </p>
+
+
         <form action="register-new-user" method="post">
             @csrf
             <div class="form-group">
@@ -22,10 +28,10 @@
             <div class="form-group">
                 <label for="">Select An Exam</label>
                 <select name="customer-exam-type">
-                    <option value="">ETS</option>
-                    <option value="">TOFLE</option>
-                    <option value="">PERSON VUE</option>
-                    <option value="">ICM</option>
+                    <option value="ETS">ETS</option>
+                    <option value="TOFLE">TOFLE</option>
+                    <option value="PERSON VUE">PERSON VUE</option>
+                    <option value="ICM">ICM</option>
                 </select>
             </div>
 

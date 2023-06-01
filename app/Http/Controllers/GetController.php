@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\DB;
 
 class GetController extends Controller
@@ -29,8 +29,10 @@ class GetController extends Controller
         return view('register');
     }
 
+
     public function ShowListHandler()
     {
+
         $query = "SELECT * FROM contactTBL";
         return DB::select($query);
     }
