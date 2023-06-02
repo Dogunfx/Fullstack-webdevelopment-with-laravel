@@ -22,3 +22,21 @@
 --     contactTBL (customer_address, customer_email, customer_phone)
 -- VALUES
 --     ("my address", '');
+-- CREATE TABLE users (
+--     name varchar(50),
+--     email varchar(50),
+--     password varchar(255),
+--     id int 
+-- );
+-- INSERT INTO
+--     users (name, email, password, id)
+-- VALUES
+--     (
+--         "dogunfx",
+--         "dogunfx@gmail.com",
+--         '$2y$10$QBgiZUaZ3ZXEeaC6RSxbeu9wpqQUmWN4Sxo.GbUbC3cw0W3KWF1T6',
+--         4
+--     );
+-- DELETE FROM users
+-- WHERE
+--     id = 3;

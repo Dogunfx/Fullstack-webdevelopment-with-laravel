@@ -7,17 +7,18 @@ use Illuminate\Support\Facades\DB;
 
 class PostController extends Controller
 {
-    //
     public function SendContactPostHandler()
     {
         $address =  Request::input("address");
         $phone =  Request::input("phone");
         $email =  Request::input("email");
+
+
         $comment =  Request::input("comment");
         $query =  "INSERT INTO contactTBL (customer_address, customer_phone, customer_email, customer_comment) VALUES (?, ?, ?, ?)";
         $record =  array($address, $phone, $email, $comment);
         DB::insert($query, $record);
-        return "Thank You, your contact has been stored";
+        return redirect('contact')->with('message', 'Thank you for contacting us');
     }
 
     public function RegisterPostHandler()
@@ -38,5 +39,13 @@ class PostController extends Controller
         DB::insert($query, $record);
 
         return redirect('register')->with('message', "Registration Successful");
+    }
+
+    public function AuthAdmin()
+    {
+        $email =  Request::input('admin-email');
+        $password = Request::input('admin-password');
+
+        return "We Will continue from here tomorrow";
     }
 }

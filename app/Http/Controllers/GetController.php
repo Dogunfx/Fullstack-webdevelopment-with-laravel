@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class GetController extends Controller
 {
@@ -35,5 +35,16 @@ class GetController extends Controller
 
         $query = "SELECT * FROM contactTBL";
         return DB::select($query);
+    }
+
+    public function EncryptPasswordHandler()
+    {
+        return Hash::make('12345');
+    }
+
+
+    public function Login()
+    {
+        return view('login');
     }
 }

@@ -14,3 +14,10 @@ Route::get("/show-contact-list", [GetController::class, "ShowListHandler"]);
 Route::post("/send-contact", [PostController::class, "SendContactPostHandler"]);
 Route::post("/register", [PostController::class, "RegisterPostHandler"]);
 Route::post('/register-new-user', [PostController::class, "RegisterNewUserHandler"]);
+
+Route::get('/encrypt', [GetController::class, 'EncryptPasswordHandler']);
+Route::get('/login', [GetController::class, 'Login']);
+
+Route::post('/auth-admin', [PostController::class, 'AuthAdmin']);
+
+

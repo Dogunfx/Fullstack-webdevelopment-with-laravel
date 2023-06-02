@@ -6,11 +6,14 @@
         <form action="send-contact" method="post">
             @csrf
             <div class="card-row">
-                <a href="show-contact-list">See all contacts</a>
+                {{-- <a href="show-contact-list">See all contacts</a> --}}
                 <h1>Contact </h1>
+                <p class="message">
+                    {{ session('message') }}
+                </p>
                 <div class="form-group">
                     <label for="">Address</label>
-                    <input type="text" placeholder="Enter Address" name="address" required >
+                    <input type="text" placeholder="Enter Address" name="address" required>
                 </div>
 
                 <div class="form-group">
